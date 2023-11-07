@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+table{
+    border: 1px black solid;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+}
+
+h1{
+    font-size: 2.2em;
+}
+
+h2{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.container h2{
+    padding: 30px;
+}
+
+
+th{
+    border-bottom: 1px black solid;
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px black solid;
+    border-right: 1px rgb(0, 0, 0) solid;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+}
+
+/*configurar GameplayNow!*/
+header .logo{
+    margin:0;
+    padding: 25px 20px;
+    font-weight: bold;
+    color: rgb(59, 137, 255);
+    font-size: 1.5em;
+
+}
+
+/*configurar posicion de elementos*/
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*configurar elementos del nav*/
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+/*configurar "indices" */
+header a{
+    padding: 4px;
+    text-decoration: none;
+    color: rgb(72, 182, 255);
+    transition: color 0.4s ease;
+    
+}
+
+header a:hover{
+    color:rgb(159, 241, 241)
+}
+
+#hero{
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,   
+        rgba(0, 0, 0, 0.685),
+        rgba(0, 0, 0, 0.623)
+    ),url(/imagenes/habilidades2.png);
+    background-position: top top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero h1{
+    padding: 0px;
+    margin-top: 120px;
+    color: rgb(221, 148, 255);
+}
+
+#hero p{
+    margin-top: 40px;
+    padding: 10px;
+    line-height: 1.7em;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+}
+
+
+#zale{
+    background-color: rgb(255, 251, 0);
+    height: 70vh;
+}
+#zale h2{
+    background-image: url(/personajes-imagenes/Zale2.png);
+    background-position: center;
+}
+
+#zale .container table{
+    background-color: rgb(214, 241, 94);
+}
+
+#zale .nombre th{
+    color: aqua;
+}
+
+#valere{
+    background-color: rgba(63, 244, 250, 0.781);
+    height: 57vh;
+}
+
+#valere h2{
+    background-image: url(/personajes-imagenes/valere2.png);
+    background-position: center;
+}
+
+#valere .container table{
+    background-color: rgb(189, 250, 245);
+}
+
+#garl{
+    background-color: rgba(134, 87, 42, 0.699);
+    height: 48vh;
+}
+
+#garl h2{
+    background-image: url(/personajes-imagenes/garl2.png);
+    background-position: top;
+}
+
+#garl .container table{
+    background-color: rgb(248, 237, 179);
+}
+
+#serai{
+    background-color: rgba(63, 134, 42, 0.699);
+    height: 67vh;
+}
+
+#serai h2{
+    background-image: url(/personajes-imagenes/serai2.png);
+    background-position: right;
+}
+
+#serai .container table{
+    background-color: rgb(118, 190, 104);
+}
+
+#reshan{
+    background-color: rgba(209, 43, 159, 0.699);
+    height: 60vh;
+}
+
+#reshan h2{
+    background-image: url(/personajes-imagenes/reshan2.png);
+    background-position: right;
+}
+
+#reshan .container table{
+    background-color: #ff77dd;
+}
+
+#bstya{
+    background-color: rgba(112, 16, 221, 0.699);
+    height: 60vh;
+}
+
+#bstya h2{
+    background-image: url(/personajes-imagenes/bstya2.png);
+    background-position: -290px 980px;
+}
+
+#bstya .container table{
+    background-color: #d173b8;
+}
+
+#creditos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color:rgb(0, 108, 197);
+    height: 50vh;
+}
+
+#creditos h2{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#creditos li{
+    list-style: none;
+    color: rgb(152, 198, 238);
+}
+
+footer{
+    background-color: rgba(140, 190, 47, 0.404);
+    padding: 20px;
+}
+
+@media (min-width: 1000px){
+    table{
+        max-width: 700px;
+    }
+
+    .container h2{
+        color: rgb(255, 255, 255);
+    }
+ 
+
+    #hero p{
+        font-size: 1.4em;
+        margin: 0px 200px;
+        margin-top: 25px;
+    }
+
+
+    #zale{
+        height: 60vh;
+        background-image: linear-gradient(
+        0deg,   
+        rgba(0, 0, 0, 0.685),
+        rgba(0, 0, 0, 0.623)
+        ),url(/personajes-imagenes/zale2.png);
+        background-position: top top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #zale h2{
+        background-image: none;
+    }
+
+    #valere{
+        height: 60vh;
+        background-image: linear-gradient(
+        0deg,   
+        rgba(0, 0, 0, 0.685),
+        rgba(0, 0, 0, 0.623)
+        ),url(/personajes-imagenes/valere2.png);
+        background-position: top top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #valere h2{
+        background-image: none;
+    }
+
+    #garl{
+        height: 50vh;
+        background-image: linear-gradient(
+        0deg,   
+        rgba(0, 0, 0, 0.685),
+        rgba(0, 0, 0, 0.623)
+        ),url(/personajes-imagenes/garl2.png);
+        background-position: top top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #garl h2{
+        background-image: none;
+    }
+
+    #serai{
+        height: 60vh;
+        background-image: linear-gradient(
+        0deg,   
+        rgba(0, 0, 0, 0.685),
+        rgba(0, 0, 0, 0.623)
+        ),url(/personajes-imagenes/serai2.png);
+        background-position: top top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #serai h2{
+        background-image: none;
+    }
+
+    #reshan{
+        height: 60vh;
+        background-image: linear-gradient(
+        0deg,   
+        rgba(0, 0, 0, 0.685),
+        rgba(0, 0, 0, 0.623)
+        ),url(/personajes-imagenes/reshan2.png);
+        background-position: top top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #reshan h2{
+        background-image: none;
+    }
+
+    #bstya{
+        height: 60vh;
+        background-image: linear-gradient(
+        0deg,   
+        rgba(0, 0, 0, 0.685),
+        rgba(0, 0, 0, 0.623)
+        ),url(/personajes-imagenes/bstya2.png);
+        background-position: top top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #bstya h2{
+        background-image: none;
+    }
+
+    
+}

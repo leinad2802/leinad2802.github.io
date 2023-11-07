@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+
+/*configurar GameplayNow!*/
+header .logo{
+    margin:0;
+    padding: 2px 20px;
+    font-weight: bold;
+    color: rgb(59, 137, 255);
+    font-size: 1.5em;
+
+}
+
+/*configurar posicion de elementos*/
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*configurar elementos del nav*/
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+/*configurar "indices" */
+header a{
+    padding: 4px;
+    text-decoration: none;
+    color: rgb(72, 182, 255);
+    transition: color 0.4s ease;
+    
+}
+
+header a:hover{
+    color:rgb(159, 241, 241)
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(194, 126, 126, 0.548),
+        rgba(231, 158, 158, 0.582)
+    ),url(/imagenes/combos3.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero p{
+    padding: 40px;
+    font-size: 1.4em;
+    color: rgb(0, 0, 0);
+}
+
+#hero h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 51, 0);
+}
+
+
+#contenido{
+    background-color: rgb(61, 68, 31); /*color de fondo para la seccion*/
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+#contenido h2{
+    color: rgb(255, 102, 0);
+    margin-bottom: 40px;
+}
+
+/* quedan 2 por fila */
+#contenido .container{
+    padding: 40px 0px;
+}
+
+/*propiedades de las cartas*/
+#contenido .carta{
+    color: rgb(0, 0, 0);
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 70px 0px;
+    margin: 5px;
+    border-radius: 40px;
+    background-color: aqua;
+}
+
+#contenido .caja{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+}
+
+#contenido .carta{
+    height: 200px;
+    width: 180px;
+    padding: 10px 10px;
+    margin: 20px;
+    box-shadow: 3px 3px 30px rgb(37, 11, 97);
+    font-size: 0.96em;
+}
+
+.carta p{
+    margin-top: 10px;
+}
+
+
+#contenido .carta:nth-child(4){
+    font-size: 0.92em;
+}
+
+#contenido .carta:nth-child(5){
+    font-size: 0.90em;
+}
+
+#contenido .carta:nth-child(7){
+    font-size: 0.85em;
+}
+
+#contenido .carta:nth-child(8){
+    font-size: 1em;
+}
+
+#creditos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color:rgb(0, 108, 197);
+    height: 50vh;
+}
+
+#creditos .container{
+    margin-top: 60px;
+}
+#creditos li{
+    list-style: none;
+    color: rgb(144, 180, 212);
+    height: 40px;
+}
+
+#creditos .lista{
+    padding-bottom: 40px;
+}
+
+footer{
+    background-color: rgba(140, 190, 47, 0.404);
+    padding: 20px;
+}

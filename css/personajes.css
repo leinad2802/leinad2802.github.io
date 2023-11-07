@@ -1,0 +1,483 @@
+*{
+    box-sizing: border-box;
+    
+}
+h1{font-size: 3.2em;}
+h2{font-size: 1.9em;
+text-align: center;}
+
+h2{
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+p{
+    margin-bottom: 40px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0px 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+
+/*configurar cabecera*/
+header .container{
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    
+}
+
+
+/*configurar GameplayNow!*/
+header .logo{
+    margin:0;
+    padding: 25px 20px;
+    font-weight: bold;
+    color: rgb(59, 137, 255);
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+header nav a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: row-reverse;
+    padding: 5px;
+    margin-top: -60px;
+    color: rgb(72, 182, 255);
+}
+
+header nav a:hover{
+    color: aqua;
+}
+
+
+
+
+/* configurar boton (chulito) */
+#btn {
+    display: none;
+}
+
+/* configurar tamaño de imagen */
+.menu-boton img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: -200px;
+    
+}
+
+/* configurar espacio del menu */
+.container-menu{
+    display: flex;
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0; left: 0;
+    transition: all 500ms ease;
+    position: fixed;
+
+    /* visibilidad y activación */
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* cuando se presione la imagen aparece el menu */
+#btn:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* configurar el interior del menu */
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background:rgb(5, 7, 0);
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+/* cuando se presione la imagen, el menu tiene un 0% de posicion
+que es en la pantalla*/
+#btn:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+.cont-menu nav{
+    transform: translateY(15%);
+}
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: rgb(10, 198, 255);
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid;
+    background-color: rgb(16, 4, 58);
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: rgb(255, 255, 255);
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,   
+        rgba(0, 0, 0, 0.288),
+        rgba(0, 0, 0, 0.164)
+    ),url(/imagenes/personajes-principal.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero h1{
+    margin-top: 90px;
+    padding: 15px;
+    color:  rgb(233, 111, 11);
+}
+
+#zale{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 238, 0, 0.384);
+}
+
+#zale .container{
+    height: 80vh;
+}
+
+
+
+
+#zale .img img{
+    margin-top: 20px;
+    height: 200px;
+    width: auto;
+    
+}
+
+#valere{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 255, 191, 0.384);
+}
+
+#valere .container{
+    height: 80vh;
+}
+
+
+#valere .img img{
+    height: 200px;
+    width: auto;
+    margin-top: 20px;
+
+    
+}
+
+#garl{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(138, 80, 27, 0.384);
+}
+
+#garl .container{
+    height: 80vh;
+}
+
+
+#garl .img img{
+    height: 200px;
+    width: 250px;
+    margin-top: 20px;
+
+    
+}
+
+#serai{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(18, 238, 18, 0.384);
+}
+
+#serai .container{
+    height: 70vh;
+}
+
+
+#serai .img img{
+    height: 200px;
+    width: 250px;
+    margin-top: 20px;
+
+}
+
+#reshan{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(112, 25, 108, 0.555);
+}
+
+#reshan .container{
+    height: 80vh;
+}
+
+
+#reshan .img img{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+
+}
+
+#bstya{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(238, 18, 227, 0.384);
+}
+
+#bstya .container{
+    height: 80vh;
+}
+
+
+#bstya .img img{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+
+}
+
+#creditos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color:rgb(0, 108, 197);
+    height: 50vh;
+}
+
+#creditos h2{
+    margin-top: -50px;
+}
+
+#creditos li{
+    list-style: none;
+    color: rgb(152, 198, 238);
+}
+
+footer{
+    background-color: rgba(140, 190, 47, 0.404);
+}
+
+@media (min-width: 1000px){
+
+    header nav a{
+        display: flex;
+        text-decoration: none;
+        flex-direction: row-reverse;
+        padding: 0px;
+        margin-top: -65px;
+        color: rgb(72, 182, 255);
+    }
+
+    header .logo{
+        text-align: center;
+        margin:0px 400px;
+        padding: 25px 20px;
+        font-weight: bold;
+        color: rgb(59, 137, 255);
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    header a{
+        margin-right: 10px;
+    }
+
+    p{
+        max-width: 1200px;
+        margin-left: -100px;
+        padding: 0px 200px;
+        line-height: 2;
+        font-size: 1.3em;
+    }
+
+
+    .texto{
+        display: flex;
+    }
+
+    .texto p{
+        margin-top: 50px;
+    }
+
+    .img{
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+
+
+    h2{
+        margin-top: 70px;
+    }
+      
+    #zale{
+        background-image: linear-gradient(
+        0deg,
+        rgba(134, 123, 123, 0.507),
+        rgba(119, 112, 112, 0.459)
+    ),url(/personajes-imagenes/zale2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 90vh;
+    }
+
+    #zale .img img{
+        height: 300px;
+        width: 400px;
+    }
+
+    #valere{
+        background-image: linear-gradient(
+        0deg,
+        rgba(134, 123, 123, 0.507),
+        rgba(119, 112, 112, 0.459)
+    ),url(/personajes-imagenes/valere2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 90vh;
+    }
+
+    #valere .img img{
+        height: 300px;
+        width: 400px;
+    }
+
+    #garl{
+        background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.507),
+        rgba(0, 0, 0, 0.459)
+    ),url(/personajes-imagenes/garl2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 90vh;
+    }
+
+    #garl .img img{
+        height: 300px;
+        width: 400px;
+    }
+
+    #serai{
+        background-image: linear-gradient(
+        0deg,
+        rgba(134, 123, 123, 0.507),
+        rgba(119, 112, 112, 0.459)
+    ),url(/personajes-imagenes/serai2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 90vh;
+    }
+
+    #serai .img img{
+        height: 300px;
+        width: 400px;
+    }
+
+    #reshan{
+        background-image: linear-gradient(
+        0deg,
+        rgba(134, 123, 123, 0.507),
+        rgba(119, 112, 112, 0.459)
+    ),url(/personajes-imagenes/reshan2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 90vh;
+    }
+
+    #reshan .img img{
+        height: 300px;
+        width: 400px;
+    }
+
+    #bstya{
+        background-image: linear-gradient(
+        0deg,
+        rgba(134, 123, 123, 0.644),
+        rgba(119, 112, 112, 0.685)
+    ),url(/personajes-imagenes/bstya2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 90vh;
+    }
+
+    #bstya .img img{
+        height: 300px;
+        width: 400px;
+    }
+    
+
+
+}

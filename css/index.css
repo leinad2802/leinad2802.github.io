@@ -1,0 +1,545 @@
+    *{
+        box-sizing: border-box;
+        
+    }
+    h1{font-size: 3.2em;}
+    h2{font-size: 1.9em;
+    text-align: center;}
+    h3{font-size: 1.8em;}
+
+    html{
+        scroll-behavior: smooth;
+    }
+    /* sdxxasdasadsaddsaadx */
+    body{
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .color-acento{
+        color:rgb(255, 145, 0);
+    }
+    /* configuracion solo de la lista */
+    li{
+        font-size: 1.4em;
+        padding: 5px 10px;
+        font-weight: bold;
+        margin: 0px;
+        color: rgb(14, 10, 71);
+    }
+
+    #resumen li{
+        list-style: none;
+    }
+
+
+    /*configuracion de botones*/
+
+    button{
+        font-size: 1.4em;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 12px;
+        border: 3px solid rgba(0, 42, 119, 0.9);
+        box-shadow: 2px 3px 20px rgba(1, 90, 60, 0.9);
+        color: white;
+        background-color: rgb(8, 74, 196);
+    }
+
+    button:hover{
+        background-color: rgb(0, 0, 163);
+        transition: background-color 0.4s ease;
+        cursor: pointer;
+    }
+
+    /*margen general*/
+    .container{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /*configurar cabecera*/
+    header{
+        background-color: rgb(0, 0, 0);
+    }
+
+    /*configurar GameplayNow!*/
+    header .logo{
+        margin:0;
+        padding: 25px 20px;
+        font-weight: bold;
+        color: rgb(59, 137, 255);
+        font-size: 1.5em;
+
+    }
+
+    /*configurar posicion de elementos*/
+    header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*configurar elementos del nav*/
+    header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    /*configurar "indices" */
+    header a{
+        padding: 4px;
+        text-decoration: none;
+        color: rgb(72, 182, 255);
+        transition: color 0.4s ease;
+        
+    }
+
+    header a:hover{
+        color:rgb(159, 241, 241)
+    }
+
+    /*configurar Hero*/
+
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 80vh;
+        color: white;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url(/imagenes/pantalla.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #hero h1{
+        padding: 10px 10px;
+        color: rgb(255, 255, 255);
+        /*agregar borde*/
+    }
+
+    /*Configurar resumen*/
+    #resumen{
+
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #resumen h2{
+        color: rgb(0, 183, 255);
+    }
+    #resumen p{
+        color: aliceblue;
+        margin: 30px;
+        line-height: 1.5;
+    }
+
+    /* requisitos ocultos para movil */
+    #resumen .texto-pc{
+        display: none;
+    }
+
+    #resumen .container{
+        display: flex;
+        text-align: center;
+        padding: 150px 20px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url(/imagenes/cascada.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+
+
+    /* configurar secciones */
+    #secciones{
+        background-color: rgb(0, 30, 70); /*color de fondo para la seccion*/
+        padding-bottom: 20px;
+        text-align: center;
+
+    }
+
+    #secciones .container{
+        padding: 40px 10px;
+    }
+
+    #secciones p{
+        display: none;
+    }
+
+    /*configurar texto "secciones"*/
+    #secciones h2{
+        color: rgb(112, 188, 255);
+    }
+
+    /*propiedades de las cartas*/
+    #secciones .carta{
+        color: rgb(255, 255, 255);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 70px 0px;
+        margin: 5px;
+        border-radius: 40px;
+    }
+
+    /*imagenes*/
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url(/imagenes/historia.png);
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url(/imagenes/personajes2.png);
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url(/imagenes/habilidades.png);
+    }
+
+    .carta:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url(/imagenes/combos.png);
+    }
+
+    .carta:nth-child(5){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url(/imagenes/exploracion.png);
+    }
+    /*configurar caracteristicas*/
+    #caracteristicas .container{
+        padding: 60px 20px;
+        text-align: left;
+        padding-bottom: 60px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(255,255,255,0.5),
+            rgba(255,255,255,0.5)
+        )
+        ,url(/imagenes/caracteristicas.png);
+        background-position: center center;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+
+    #caracteristicas h2{
+        color: rgb(20, 0, 109);
+        font-size: 2.2em;
+        margin-top: -30px;
+        padding-top: 20px;
+    }
+
+    /* ocultar imagen para movil */
+    #caracteristicas .container img{
+        display: none;
+    }
+
+    /* Configurar imagenes relacionadas */
+    #imagenes{
+        background-color: rgb(185, 255, 255);
+        padding: 100px 20px 500px 0px;
+        height: 80vh;
+        position: center center;
+    }
+
+    .slider{
+        text-align: center;
+        overflow: hidden;
+        margin: 50px auto 0px;
+        width: 470px;
+        height: auto;
+        
+    }
+
+    #imagenes .slider li{
+        list-style: none;
+        width: 100%;
+        
+
+    }
+
+    .slider ul{
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: deslizar 14s infinite alternate ease-in-out;
+    }
+    .slider img{
+        width: 450px;
+        height: 300px;
+        
+    }
+
+
+
+    @keyframes deslizar {
+        0%{margin-left: 0%;}
+        15%{margin-left: 0%;}
+
+        20%{margin-left: -100%;}
+        35%{margin-left: -100%;}
+
+        40%{margin-left: -200%;}
+        55%{margin-left: -200%;}
+
+        60%{margin-left: -300%;}
+        75%{margin-left: -300%;}
+
+        80%{margin-left: -400%;}
+        95%{margin-left: -400%;}
+
+        95%{margin-left: -400%;}
+        100%{margin-left: -400%;}
+        
+    }
+
+    /* Configurar final */
+
+    #creditos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        color:rgb(0, 108, 197);
+        height: 50vh;
+    }
+
+
+    #creditos li{
+        list-style: none;
+        color: rgb(152, 198, 238);
+        margin-bottom: 5px;
+    }
+
+    /* configurar footer */
+
+    footer p{
+        margin:0;
+    }
+
+    footer{
+        background-color: bisque;
+        color: rgb(66, 66, 66);
+    }
+
+    footer .container{
+        height: 7ch;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+
+
+@media (min-width: 680px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 15px;
+    }
+    header a{
+        margin: 3px;
+    }
+    #hero{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,25,0,0.5)
+    ),url(/imagenes/img7.png);
+        text-align: center;
+        margin: 0px;
+        background-size: cover;
+    }
+
+    #resumen{       
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.788),
+        rgba(26, 3, 3, 0.815)
+        ),url(/imagenes/cascada.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #resumen .container{
+        display: flex;
+        background: none;
+        padding-bottom: 40px;
+    }
+
+    #resumen .img{
+        background-size: cover;
+        position: center center;
+        height: 300px;
+        width: 300px;
+        margin-left: 60px;
+        background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.075),
+        rgba(255, 255, 255, 0.089)
+    ),url(/imagenes/personajes.png);
+    background-repeat: no-repeat;
+    }
+
+    #resumen .texto{
+        width: 60%;
+        padding-right: 30px;
+        margin-top: -120px;
+    }
+        
+    #resumen .texto-pc{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 3px;
+    }
+    
+    .lista-pc li{
+        color: rgb(224, 255, 255);
+        font-size: 1em;
+        padding: 1px;
+    }
+/* fondo */
+    #caracteristicas{
+        background-image: linear-gradient(
+        0deg,
+        rgba(123, 255, 222, 0.452),
+        rgba(93, 250, 255, 0.438)
+        ),url(/imagenes/caracteristicas.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+    }
+/* eliminar imagen de movil */
+    #caracteristicas .container{
+        background: none;
+
+    }
+/* detalles del Caracteristicas */
+    #caracteristicas h2{
+        margin-top: 0px;
+        padding-top: 20px;
+        margin-bottom: 60px;
+    }
+    /* aparecer imagen */
+    #caracteristicas .img{
+        background-size: cover;
+        height: 250px;
+        width: 900px;
+        margin-left: 60px;
+        background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.075),
+        rgba(255, 255, 255, 0.089)
+    ),url(/imagenes/caracteristicas2.png);
+    background-repeat: no-repeat;
+    border-radius: 50px;
+
+    }
+    /* posicionar los elementos de "lista-imagen" */
+    #caracteristicas .lista-imagen{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* cartas */
+
+    #secciones .container{
+    padding: 10px;
+    }
+
+    #secciones h2{
+        margin-top: 70px;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+        
+    }
+    #secciones h3{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        
+    }
+
+    #secciones .sectores{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+    
+    #secciones .carta{
+        height: 250px;
+        width: 300px;
+        padding: 10px 10px;
+        margin: 20px;
+        box-shadow: 3px 3px 30px rgb(142, 2, 170);
+    }
+
+    #secciones p{
+        display: block;
+        text-align: center;
+       font-size: 1.5em;
+    }
+
+    #imagenes h2{
+        font-size: 2.4em;
+        text-align: center;
+    }
+    
+    .slider{
+        text-align: center;
+        overflow: hidden;
+        margin: 50px auto 0px;
+        width: 700px;
+        height: auto;
+    }
+
+    .slider img{
+        width: 680px;
+    }
+
+}
+
+
+
